@@ -1,0 +1,87 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgba(43, 85, 237, 0.844);
+    
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 3rem;
+    width: 20rem;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+}
+.boxes{
+    margin-top: 3rem;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+}
+
+.box{
+    background-color: rgb(234, 238, 243);
+    height: 9rem;
+    width: 9rem;
+    margin: 0.6rem;
+    border-radius: 1rem;
+    border: 1.5px solid;
+}
+.set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#reset,#newGame{
+    background-color:white;
+    height: 2rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-weight: bold;
+    border: 1.5px solid;
+    border-radius: 0.5rem;    
+}
+
+.second-page{
+    display: none;
+}
+
+.second-page{
+    margin-top: 3rem;
+    height: 32rem;
+    margin-bottom: 1rem;
+    display: none;
+    margin-left:5rem;
+    margin-top: 18rem;
+
+}
+.second{
+    margin-left:20rem;
+    margin-top: 18rem;
+}
+#msg1{
+    color:white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.reset{
+    border: 2px solid;
+}
