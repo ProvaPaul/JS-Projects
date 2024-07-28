@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    background-color: beige;
+
+}
+.main{
+    background-color: rgb(31, 226, 161);
+    height: 38rem;
+    width: 27rem;
+    border-radius: 2%;
+    border: solid 2px rgb(17, 156, 73);
+}
+.search-part{
+    height: 4rem;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.srch{
+    height: 2.1rem;
+    width: 15rem;
+    border-radius: 0.3rem;
+}
+.srcBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1rem;
+    width: 2.4rem;
+    font-size: 1.3rem;
+    border-radius: 0.3rem;
+}
+.select-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+    /* background-color: aqua; */
+}
+.tmp{
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+    margin-bottom: 2rem;
+    color: rgb(58, 18, 100);
+}
+.place{
+    color: rgb(45, 10, 10);
+    margin-left: 0.5rem;
+}
+.below-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.3rem;
+    height: 5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    gap: 9rem;
+}
+.humidity,.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-left: -3rem;
+}
+.hum{
+    gap: 2.8rem;
+}
+
+.select-below{
+    background-color: rgb(31, 226, 161);
+    display: none;
+}
+
+.error{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
