@@ -1,0 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Times New Roman'; 
+
+}
+
+.input_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    background-color: rgb(0, 187, 255);
+    gap: 2rem;
+    border: rgb(32, 32, 149) solid 2px;
+}
+
+.input{
+    height: 2.5rem;
+    width: 30rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.src{
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    
+}
+
+.container{
+   /* height: 25rem;
+   width: 25rem;*/
+   margin-left: 4rem;
+   font-size: 1.1rem;
+   gap: 1rem;
+   padding-bottom: 1rem;
+   margin-bottom: 10rem;
+   /* margin-top: 2rem; */
+}
+.contain{
+    gap: 1rem;
+    border: solid 2px rgb(174, 87, 16);
+    padding: 0.8rem;
+    margin-top: 1em;
+    border-radius: 1rem;
+    width: 80%;  
+
+}
+
+/* .synonym,.antonym,.def{
+    color: red;
+    display: inline-block;
+} */
+
+.partsOfSpeech{
+    font-size: 1.4rem;
+    color: brown;
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+ .definition1, .synonym-content, .antonym-content {
+    display: inline-block;
+} 
