@@ -10,24 +10,13 @@ var x=0,y=4;
 next.addEventListener(("click"),function(){   
     if(x==arr.length-1){ 
         x=0;
-        var img=document.createElement("img");
-        img.src=arr[x];
-        img.className="fadeinimg";
-        div.appendChild(img);
-        if(div.children.length>2){
-            div.removeChild(div.children[0]);
-        }
+        swap();
+
     } 
     else{    
        x++;
-       var img=document.createElement("img");
-        img.src=arr[x];
-        img.className="fadeinimg";
-        div.appendChild(img);
-        if(div.children.length>2){
-            div.removeChild(div.children[0]);
-        }
-        // img.src=arr[x];  
+       swap();
+ 
     }   
     console.log(img.src);
 });
@@ -35,6 +24,18 @@ next.addEventListener(("click"),function(){
 previous.addEventListener(("click"),function(){   
     if(x==0){ 
     x=4;
+    swap();
+} 
+else{  
+        x--;
+        swap();
+
+}   
+console.log(img.src);
+});
+
+
+function swap(){
     var img=document.createElement("img");
         img.src=arr[x];
         img.className="fadeinimg";
@@ -42,21 +43,4 @@ previous.addEventListener(("click"),function(){
         if(div.children.length>2){
             div.removeChild(div.children[0]);
         }
-
-    // img.src=arr[x]; 
-    
-
-} 
-else{  
-        x--;
-  
-        var img=document.createElement("img");
-        img.src=arr[x];
-        img.className="fadeinimg";
-        div.appendChild(img); 
-        if(div.children.length>2){
-            div.removeChild(div.children[0]);
-        }
-}   
-console.log(img.src);
-});
+}
