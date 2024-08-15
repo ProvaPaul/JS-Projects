@@ -79,13 +79,14 @@ input{
 
 /* right part */
 .result{
-    width: 80%;
-    height: 95%;
+    width: 70%;
+    height: 75%;
     background-color: rgb(214, 191, 157);
     border: solid 2px rgb(142, 103, 32);
     border-radius: 5%;
     padding-left: 5%;
     margin-right: -10rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -103,3 +104,10 @@ img{
     margin-top: 4%;
     margin-left: 35%;
 }
+
+.headd{
+    margin-left: -30%;
+    margin-bottom: 3%;
+    margin-top: -3%;
+}
+

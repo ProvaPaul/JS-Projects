@@ -4,78 +4,84 @@ var photo=document.querySelector("#photo");
 var desc=document.querySelector("#desc");
 var submit=document.querySelector("#submit");
 
-
-// var img=document.querySelector(".img");
-// var place=document.querySelector(".h22");
-// var locc=document.querySelector(".h33");
-// var details=document.querySelector(".details");
-// var remove=document.querySelector("#remove");
+var countt=0;
 
 submit.addEventListener(("click"),function(event){  
-          event.preventDefault();
-          var errormsg=document.querySelector(".error");
-          errormsg.innerText="";
-          errormsg.style.marginTop="1rem";
-          var head=document.querySelector(".headd");
+        event.preventDefault();
+        var errormsg=document.querySelector(".error");
+        errormsg.innerText="";
+        errormsg.style.marginTop="1rem";
 
-    if(nam.value!="" && loc.value!="" && photo.value!="" && desc.value!=""){
+    if(nam.value!="" && loc.value!="" && photo.value!="" && desc.value!=""){ 
+    var outerdiv=document.querySelector(".form2");
+    if(countt==0){
+        var head=document.querySelector(".headd");
+        head.innerText="My WishList"
 
-    var outerdiv=document.querySelector(".box");
     outerdiv.innerText="";
+    }
 
     errormsg.innerText="Destination Details Added Successfully!";
     errormsg.style.color="rgb(4, 71, 4)";
 
 
-    head.innerText="My WishList";
 
     var innerdiv=document.createElement("div");
-    innerdiv.className="box";
+    innerdiv.className="result";
 
     var img1=document.createElement("img");
     img1.className="img";
     img1.src=photo.value;
-    innerdiv.appendChild(img1);
+    innerdiv.append(img1);
 
     var place1=document.createElement("h3");
     place1.className="h22";
     place1.innerText=nam.value;
-    innerdiv.appendChild(place1);
+    innerdiv.append(place1);
     
     var loc1=document.createElement("h3");
     loc1.className="h33";
     loc1.innerText=loc.value;
-    innerdiv.appendChild(loc1);
+    innerdiv.append(loc1);
 
     var desc1=document.createElement("p");
     desc1.className="details";
     desc1.innerText=desc.value;
-    innerdiv.appendChild(desc1);
+    innerdiv.append(desc1); 
+    
+    var remove=document.createElement("button");
+    remove.className="remove";
+    remove.innerText="remove";
+    innerdiv.append(remove);
 
 
     outerdiv.appendChild(innerdiv);
 
-    }
+    
 
-    else{
+    remove.addEventListener(("click"),function(event){
+    event.preventDefault();
+        innerdiv.remove();  //for removing the specific div
+
+        if(outerdiv.children.length==0){
+            var head=document.querySelector(".headd");
+            head.innerText="Enter Your WishList";
+        }
+        
+});
+
+    countt=1;
+  }
+
+else{
+    // for not fillup the all input
+
         var form=document.querySelector(".form-in");
-        // var errormsg=document.createElement("h3");
-        // errormsg.className="error";
         errormsg.innerText="Please fillup the form correctly!";
         errormsg.style.color="red";
         form.append(errormsg);
     }
-
-    remove.addEventListener(("click"),function(event){
-    event.preventDefault();
-    img1.src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/37/3b/ef/hakaluki-haor-moulvibazar.jpg?w=1200&h=700&s=1";
-    place1.innerText="Enter place";
-    loc1.innerText="Enter Location";
-    desc1.innerText="Enter description";
-
-
-})
+          
     
 
 });
-
